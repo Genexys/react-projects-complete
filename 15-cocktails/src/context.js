@@ -42,7 +42,7 @@ export const AppProvider = ({children}) => {
             setLoading(false);
         }
 
-    })
+    }, [searchTerm])
 
     useEffect(() => {
         fetchData()
